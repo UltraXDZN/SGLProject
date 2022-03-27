@@ -1,0 +1,50 @@
+﻿<Page x:Class="SGLProject.Pages.PreparingToLaunchSGL"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SGLProject.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PreparingToLaunchSGL">
+
+    <Grid>
+        <Grid
+            Background="{StaticResource SearchBackgroundBrush}"
+            x:Name="MainGrid"
+            Height="220"
+            Width="500"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <StackPanel
+                Orientation="Vertical"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+                <Image
+                    Source="../Resources/ZvaneCrnjeTournamentLogoNoGlow.png"
+                    Width="200"
+                    Height="200"
+                    Margin="0, -30"/>
+                <ProgressBar
+                    x:Name="ProgressBar"
+                    Foreground="{StaticResource ProgressBar.Progress}"
+                    Height="50"
+                    Width="50"
+                    Margin="0, 0"
+                    Visibility="Collapsed"
+                    HorizontalAlignment="Center"
+                    IsIndeterminate="True"
+                    Style="{StaticResource CircularProgressBar}"/>
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    FontFamily="Brutal Type"
+                    FontWeight="Bold"
+                    Foreground="{StaticResource CaptionFontBrush}"
+                    TextAlignment="Center"
+                    Margin="0, 10"
+                    Text="OTVARANJE GLAVNOG SGL SUSTAVA"/>
+
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

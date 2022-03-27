@@ -1,0 +1,111 @@
+﻿<Page x:Class="SGLProject.Pages.SignInPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:attachedProperties="clr-namespace:SGLProject.Attached_Properties"
+      xmlns:local="clr-namespace:SGLProject.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="829" d:DesignWidth="1538"
+      Title="SignInPage">
+
+    <Grid>
+        <Border
+            MinHeight="745"
+            MinWidth="470"
+            Background="{StaticResource BGTry1}"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <Grid>
+                <Image
+                    Margin="38,-49,38,484"
+                    HorizontalAlignment="Center"
+                    Source="../Resources/ZvaneCrnjeTournamentLogo.png" Width="394"/>
+                <!--Style="{StaticResource EpicLogoStyle}"/>-->
+
+                <TextBlock
+                    Text="ODABERITE NAČIN PRIJAVE"
+                    FontFamily="Brutal Type"
+                    FontWeight="Bold"
+                    FontSize="12"
+                    Foreground="{StaticResource CaptionFontBrush}"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Margin="150, 300, 0, 0"/>
+
+                <StackPanel
+                    Margin="0, 350, 0, 0">
+
+                    <attachedProperties:LoginServiceButtons
+                        Content="PRIJAVITE SE SA SGL PROFILOM"
+                        IconWidth="75"
+                        IconHeight="75"
+                        Icon="{StaticResource EpicIcon}"
+                        IconBackground="{DynamicResource FBBackBrush}"
+                        IconBackgroundHover="{DynamicResource FBBackHoverBrush}"
+                        ImageIcon="../Resources/ZvaneCrnjeTournamentLogo.png"/>
+                    <attachedProperties:LoginServiceButtons
+                        Content="PRIJAVITE SE SA GOOGLE PROFILOM"
+                        IconWidth="22"
+                        IconHeight="25"
+                        Icon="{StaticResource GoogleIcon}"
+                        IconBackground="{DynamicResource GoogleBackBrush}"
+                        IconBackgroundHover="{DynamicResource GoogleBackHoverBrush}"
+                        ImageIcon="../Resources/googleicon.png"/>
+                    <attachedProperties:LoginServiceButtons
+                        Content="PRIJAVITE SE SA SKOLE.HR PROFILOM"
+                        IconWidth="150"
+                        IconHeight="30"
+                        Icon="{StaticResource GoogleIcon}"
+                        IconBackground="{DynamicResource GoogleBackBrush}"
+                        IconBackgroundHover="{DynamicResource GoogleBackHoverBrush}"
+                        ImageIcon="../Resources/Carnet.png"/>
+                    <TextBlock
+                        Foreground="{StaticResource DisabledFontBrush}"
+                        FontFamily="Brutal Type"
+                        FontSize="14"
+                        TextAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Margin="0,12"
+                        LineHeight="20">
+                        <Run Text="Nemate SGL profil?"/>
+                        <Hyperlink
+                            Foreground="{StaticResource CaptionFontBrush}"
+                            FontWeight="Bold"
+                            TextDecorations="None">Izradi račun</Hyperlink>
+                        <Run Text="ili"/>
+                        <LineBreak/>
+                        <Hyperlink
+                            Foreground="{StaticResource CaptionFontBrush}"
+                            FontWeight="Bold"
+                            TextDecorations="None"
+                            Click="Hyperlink_Click">Se Prijavi poslije</Hyperlink>
+
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+        </Border>
+        <Button
+            Content="{StaticResource SettingsIcon}"
+            FontSize="14"
+            HorizontalAlignment="Left"
+            Margin="39, 0, 0, 35"
+            VerticalAlignment="Bottom"
+            Click="ButtonBase_Click">
+            <Button.Style>
+                <Style
+                    TargetType="{x:Type Button}"
+                    BasedOn="{StaticResource IconOnlyButtonStyle}">
+                    <Style.Triggers>
+                        <Trigger
+                            Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="{StaticResource SettingsIconHoverBrush}"/>
+
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            
+        </Button>
+    </Grid>
+</Page>

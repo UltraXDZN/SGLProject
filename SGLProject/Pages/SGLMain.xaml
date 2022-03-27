@@ -1,0 +1,116 @@
+﻿<Page x:Class="SGLProject.Pages.SGLMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SGLProject.Pages"
+      xmlns:attachedProperties="clr-namespace:SGLProject.Attached_Properties"
+      mc:Ignorable="d" 
+      d:DesignHeight="829" d:DesignWidth="1538"
+      Title="SGLMain"
+      FontFamily="Brutal Type">
+
+    <Page.Resources>
+        <Style TargetType="{x:Type Border}"
+               x:Key="SignInPopup">
+            <Setter Property="Height" Value="0"/>
+            <Setter Property="Margin" Value="5,0"/>
+            <Setter Property="Background" Value="{StaticResource PopupBackgroundBrush}"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Title, RelativeSource={RelativeSource AncestorType=Page, Mode=FindAncestor}}" Value="SGLMain">
+                    <DataTrigger.EnterActions>
+                        <BeginStoryboard x:Name="ShowSignInPopup">
+                            <Storyboard SpeedRatio="2">
+                                <DoubleAnimation Storyboard.TargetProperty="Height"
+                                                 To="50"
+                                                 Duration="0:0:0.5"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </DataTrigger.EnterActions>
+                    <DataTrigger.ExitActions>
+                        <RemoveStoryboard BeginStoryboardName="ShowSignInPopup"/>
+                    </DataTrigger.ExitActions>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Border
+            Grid.Row="0"
+            Style="{StaticResource SignInPopup}">
+            <StackPanel
+                Orientation="Horizontal">
+                <TextBlock
+                    Margin="19, 0"
+                    FontSize="15"
+                    Text="Trenutno niste prijavljeni. Kako bi ste dobili pristup svim SGL značajkama, prijavite se u sustav."
+                    VerticalAlignment="Center"
+                    Foreground="{StaticResource CaptionFontBrush}"/>
+                <Button
+                    Margin="0, 2, 0, 3"
+                    Content="Prijavi se"
+                    Click="Button_Click"
+                    Style="{StaticResource PrimaryButtonStyle}"/>
+            </StackPanel>
+        </Border>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Rectangle HorizontalAlignment="Right"
+                       Width="1"
+                       Fill="{StaticResource SearchBackgroundBrush}"/>
+            <Grid
+                Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="122"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid
+                    Cursor="Hand"
+                    Height="122">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="86"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="../Resources/ZvaneCrnjeTournamentLogoNoGlow.png"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"/>
+                    <TextBlock
+                        Grid.Column="1"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        FontSize="16"
+                        Text="School Gaming League"
+                        Margin="25, 0, 0, 0"
+                        Foreground="{StaticResource CaptionFontBrush}"/>
+                </Grid>
+                <attachedProperties:SideNavigationMenu Grid.Row="1">
+                    <attachedProperties:SideNavigationMenu.CheckableMenuButtonsContainer>
+                        <StackPanel Orientation="Vertical">
+                            <attachedProperties:CheckableMenuButtons
+                            Content="Home"
+                            Icon="{StaticResource HomeIcon}"
+                            Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"/>
+                            <attachedProperties:CheckableMenuButtons
+                            Content="Natjecanja"
+                            Icon="{StaticResource TrophyIcon}"
+                            Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"
+                            Margin="-3, 0, 0, 0"/>
+                        </StackPanel>
+                    </attachedProperties:SideNavigationMenu.CheckableMenuButtonsContainer>
+
+                    <attachedProperties:SideNavigationMenu.FooterCheckableMenuButtonsContainer>
+                        <attachedProperties:CheckableMenuButtons Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"/>
+                    </attachedProperties:SideNavigationMenu.FooterCheckableMenuButtonsContainer>
+                </attachedProperties:SideNavigationMenu>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
