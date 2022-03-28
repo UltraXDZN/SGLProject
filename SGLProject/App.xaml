@@ -13,6 +13,7 @@
                 <ResourceDictionary Source="Styles/Window.xaml"/>
                 <ResourceDictionary Source="Styles/ProgressBarStyles.xaml"/>
                 <ResourceDictionary Source="Styles/ButtonStyle.xaml"/>
+                <ResourceDictionary Source="Styles/ComboBoxStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

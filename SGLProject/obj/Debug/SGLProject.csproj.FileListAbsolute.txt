@@ -34,3 +34,41 @@ E:\Zadace\SGLProject\SGLProject\obj\Debug\SGLProject.csproj.CoreCompileInputs.ca
 E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\SGLMain.g.cs
 E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\SGLMain.baml
 E:\Zadace\SGLProject\SGLProject\obj\Debug\SGLProject_Content.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\bin\Debug\SGLProject.exe.config
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\bin\Debug\SGLProject.exe
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\bin\Debug\SGLProject.pdb
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Resources\Icons.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Styles\Colors.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Styles\Fonts.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Styles\Window.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\MainWindow.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\LoadingPage.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\PreparingToLaunchSGL.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\SettingsPage.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\SGLMain.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\SignInPage.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Styles\Window.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\App.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLProject_Content.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLProject_MarkupCompile.cache
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLProject_MarkupCompile.lref
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\App.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\MainWindow.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\LoadingPage.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\PreparingToLaunchSGL.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\SettingsPage.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\SGLMain.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\SignInPage.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Styles\ButtonStyle.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Styles\IconStyle.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Styles\ProgressBarStyles.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLProject.g.resources
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLProject.Properties.Resources.resources
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLProject.csproj.GenerateResource.cache
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLProject.csproj.CoreCompileInputs.cache
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLProject.exe
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLProject.pdb
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Styles\ComboBoxStyle.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLProject.csproj.AssemblyReference.cache

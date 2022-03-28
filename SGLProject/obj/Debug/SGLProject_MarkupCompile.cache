@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Zadace\SGLProject\SGLProject\obj\Debug\
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\
 SGLProject
 none
 false
 DEBUG;TRACE
-E:\Zadace\SGLProject\SGLProject\App.xaml
-13-186745456
-1-1405756251
-221113739341
-13-1505183044
-MainWindow.xaml;Pages\LoadingPage.xaml;Pages\PreparingToLaunchSGL.xaml;Pages\SettingsPage.xaml;Pages\SGLMain.xaml;Pages\SignInPage.xaml;Resources\Icons.xaml;Styles\ButtonStyle.xaml;Styles\Colors.xaml;Styles\Fonts.xaml;Styles\IconStyle.xaml;Styles\ProgressBarStyles.xaml;Styles\Window.xaml;
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\App.xaml
+14-2091876240
+1-400230271
+22572694528
+14-1199688468
+MainWindow.xaml;Pages\LoadingPage.xaml;Pages\PreparingToLaunchSGL.xaml;Pages\SettingsPage.xaml;Pages\SGLMain.xaml;Pages\SignInPage.xaml;Resources\Icons.xaml;Styles\ButtonStyle.xaml;Styles\Colors.xaml;Styles\ComboBoxStyle.xaml;Styles\Fonts.xaml;Styles\IconStyle.xaml;Styles\ProgressBarStyles.xaml;Styles\Window.xaml;
 
 False
 

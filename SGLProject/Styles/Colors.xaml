@@ -219,9 +219,9 @@
     <!--#endregion-->
     
     <!--#region ComboBox Brushes-->
-    <SolidColorBrush x:Key="ComboBox.Static.Background" Color="#6C6D6D"/>
+    <SolidColorBrush x:Key="ComboBox.Static.Background" Color="Transparent"/>
 
-    <SolidColorBrush x:Key="ComboBox.Static.Border" Color="#FFACACAC"/>
+    <SolidColorBrush x:Key="ComboBox.Static.Border" Color="White"/>
 
     <SolidColorBrush x:Key="ComboBox.Static.Editable.Background" Color="#FFFFFFFF"/>
     <SolidColorBrush x:Key="ComboBox.Static.Editable.Border" Color="#FFABADB3"/>
@@ -268,10 +268,10 @@
     <!--<SolidColorBrush x:Key="ComboBox.Static.Glyph" Color="#FF606060"/>-->
     <SolidColorBrush x:Key="ComboBox.Static.Glyph" Color="White"/>
     <SolidColorBrush x:Key="TextBox.Static.Background" Color="#FFFFFFFF"/>
-    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHover.Background" Color="#5C5C5C"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHover.Background" Color="Transparent"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHover.Border" Color="#5C5C5C"/>
     <!--<SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelected.Background" Color="#3D26A0DA"/>-->
-    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelected.Background" Color="#5C5C5C"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelected.Background" Color="Transparent"/>
 
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelected.Border" Color="#5C5C5C"/>
 

@@ -8,32 +8,8 @@
       mc:Ignorable="d" 
       d:DesignHeight="829" d:DesignWidth="1538"
       Title="SGLMain"
-      FontFamily="Brutal Type">
-
-    <Page.Resources>
-        <Style TargetType="{x:Type Border}"
-               x:Key="SignInPopup">
-            <Setter Property="Height" Value="0"/>
-            <Setter Property="Margin" Value="5,0"/>
-            <Setter Property="Background" Value="{StaticResource PopupBackgroundBrush}"/>
-            <Style.Triggers>
-                <DataTrigger Binding="{Binding Title, RelativeSource={RelativeSource AncestorType=Page, Mode=FindAncestor}}" Value="SGLMain">
-                    <DataTrigger.EnterActions>
-                        <BeginStoryboard x:Name="ShowSignInPopup">
-                            <Storyboard SpeedRatio="2">
-                                <DoubleAnimation Storyboard.TargetProperty="Height"
-                                                 To="50"
-                                                 Duration="0:0:0.5"/>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </DataTrigger.EnterActions>
-                    <DataTrigger.ExitActions>
-                        <RemoveStoryboard BeginStoryboardName="ShowSignInPopup"/>
-                    </DataTrigger.ExitActions>
-                </DataTrigger>
-            </Style.Triggers>
-        </Style>
-    </Page.Resources>
+      FontFamily="Brutal Type"
+    xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -95,21 +71,70 @@
                     <attachedProperties:SideNavigationMenu.CheckableMenuButtonsContainer>
                         <StackPanel Orientation="Vertical">
                             <attachedProperties:CheckableMenuButtons
-                            Content="Home"
+                            Content="Početna"
                             Icon="{StaticResource HomeIcon}"
                             Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"/>
                             <attachedProperties:CheckableMenuButtons
                             Content="Natjecanja"
                             Icon="{StaticResource TrophyIcon}"
-                            Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"
-                            Margin="-3, 0, 0, 0"/>
+                            Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"/>
+                            <attachedProperties:CheckableMenuButtons
+                            Content="Povijest"
+                            Icon="{StaticResource HistoryIcon}"
+                            Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"/>
                         </StackPanel>
                     </attachedProperties:SideNavigationMenu.CheckableMenuButtonsContainer>
 
                     <attachedProperties:SideNavigationMenu.FooterCheckableMenuButtonsContainer>
-                        <attachedProperties:CheckableMenuButtons Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"/>
+                        <StackPanel Orientation="Vertical">
+                            <attachedProperties:CheckableMenuButtons
+                            Content="Postavke"
+                            x:Name="BtnSettings"
+                            Icon="{StaticResource SettingsIcon}"
+                            Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"
+                            Click="BtnSettings_Click"/>
+                            <attachedProperties:CheckableMenuButtons
+                            Content="Profil"
+                            Icon="{StaticResource OfflineIcon}"
+                            Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"/>
+                        </StackPanel>
                     </attachedProperties:SideNavigationMenu.FooterCheckableMenuButtonsContainer>
                 </attachedProperties:SideNavigationMenu>
+            </Grid>
+            <Grid
+                Grid.Column="1"
+                Margin="34">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="178"/>
+                        <ColumnDefinition Width="417"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto" MinWidth="274"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock 
+                        FontSize="17"
+                        Text="Sortiraj po"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Margin="8, 0"
+                        Foreground="{StaticResource CaptionFontBrush}"/>
+                    <ComboBox
+                        Grid.Column="1"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        SelectedIndex="0"
+                        Style="{DynamicResource FlatComboBoxStyle1}">
+                        <ComboBoxItem Content="Nedavno"/>
+                        <ComboBoxItem Content="Abecedno"/>
+
+
+                    </ComboBox>
+                </Grid>
             </Grid>
         </Grid>
     </Grid>
