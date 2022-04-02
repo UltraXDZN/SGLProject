@@ -127,13 +127,46 @@
                         Grid.Column="1"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center"
+                        IsDropDownOpen="True"
                         SelectedIndex="0"
-                        Style="{DynamicResource FlatComboBoxStyle1}">
-                        <ComboBoxItem Content="Nedavno"/>
+                        Style="{StaticResource FlatComboBoxStyle1}">
+                        <ComboBoxItem Content="Nedavno" Style="{DynamicResource FlatComboBoxItemStyle1}"/>
                         <ComboBoxItem Content="Abecedno"/>
-
-
                     </ComboBox>
+                    <StackPanel
+                        Grid.Column="2"
+                        Orientation="Horizontal" Margin="62,0,-50,0">
+                        <TextBlock
+                            FontSize="17"
+                            Text="Filtriraj"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Foreground="{StaticResource CaptionFontBrush}"/>
+                        <ComboBox
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            SelectedIndex="0"
+                            Style="{StaticResource FlatComboBoxStyle1}">
+                            <ComboBoxItem Content="Sve"/>
+                            <ComboBoxItem Content="Nadolazeći"/>
+                            <ComboBoxItem Content="Prošli"/>
+
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel
+                        Grid.Column="4"
+                        HorizontalAlignment="Right"
+                        Margin="0,0,35,0">
+                        <RadioButton
+                            Content="{StaticResource GridViewIcon}"
+                            FontSize="15"
+                            IsChecked="True"
+                            GroupName="SwitchViewButtons"
+                            Style="{StaticResource IconOnlyRadioButtonStyle}">
+                            
+                        </RadioButton>
+
+                    </StackPanel>
                 </Grid>
             </Grid>
         </Grid>
