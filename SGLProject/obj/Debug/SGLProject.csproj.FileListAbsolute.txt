@@ -72,3 +72,9 @@ E:\Zadace\SGLProject\SGLProject\obj\Debug\SGLProject.csproj.GenerateResource.cac
 E:\Zadace\SGLProject\SGLProject\obj\Debug\SGLProject.csproj.CoreCompileInputs.cache
 E:\Zadace\SGLProject\SGLProject\obj\Debug\SGLProject.exe
 E:\Zadace\SGLProject\SGLProject\obj\Debug\SGLProject.pdb
+E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\SearchBox.g.cs
+E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\SearchBox.baml
+E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\LibraryItemCard.g.cs
+E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\LibraryItemCard.baml
+E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\LibraryShopCard.g.cs
+E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\LibraryShopCard.baml

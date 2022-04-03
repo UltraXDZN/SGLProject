@@ -1,5 +1,8 @@
 ﻿
 FE:\Zadace\SGLProject\SGLProject\App.xaml;;
+FE:\Zadace\SGLProject\SGLProject\CustomControls\LibraryItemCard.xaml;;
+FE:\Zadace\SGLProject\SGLProject\CustomControls\LibraryShopCard.xaml;;
+FE:\Zadace\SGLProject\SGLProject\CustomControls\SearchBox.xaml;;
 FE:\Zadace\SGLProject\SGLProject\MainWindow.xaml;;
 FE:\Zadace\SGLProject\SGLProject\Pages\LoadingPage.xaml;;
 FE:\Zadace\SGLProject\SGLProject\Pages\PreparingToLaunchSGL.xaml;;

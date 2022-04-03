@@ -206,8 +206,8 @@
     <SolidColorBrush x:Key="IconActiveBrush" Color="{StaticResource IconActiveColor}"/>
 
     <!--Search Background Color-->
-    <Color x:Key="SearchBackgroundColorLightLight">#202020</Color>
-    <SolidColorBrush x:Key="SearchBackgroundBrush" Color="{StaticResource SearchBackgroundColorLightLight}"/>
+    <Color x:Key="SearchBackgroundColor">#202020</Color>
+    <SolidColorBrush x:Key="SearchBackgroundBrush" Color="{StaticResource SearchBackgroundColor}"/>
     
 
     <!--Search Background Gradient-->

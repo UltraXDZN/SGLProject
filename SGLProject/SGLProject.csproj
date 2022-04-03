@@ -69,6 +69,16 @@
     <Compile Include="Converters\PositiveToNegativeConverter.cs" />
     <Compile Include="Converters\RotateTransformCentreConverter.cs" />
     <Compile Include="Converters\StartPointConverter.cs" />
+    <Compile Include="Converters\TextToBoolConverter.cs" />
+    <Compile Include="CustomControls\LibraryItemCard.xaml.cs">
+      <DependentUpon>LibraryItemCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\LibraryShopCard.xaml.cs">
+      <DependentUpon>LibraryShopCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\SearchBox.xaml.cs">
+      <DependentUpon>SearchBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LoadingPage.xaml.cs">
       <DependentUpon>LoadingPage.xaml</DependentUpon>
     </Compile>
@@ -85,6 +95,18 @@
       <DependentUpon>SignInPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Styles\Window.cs" />
+    <Page Include="CustomControls\LibraryItemCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\LibraryShopCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\SearchBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -192,5 +214,6 @@
     <Resource Include="Resources\trofej.png" />
     <Content Include="Resources\trophy.svg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

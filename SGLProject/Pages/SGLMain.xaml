@@ -9,7 +9,7 @@
       d:DesignHeight="829" d:DesignWidth="1538"
       Title="SGLMain"
       FontFamily="Brutal Type"
-    xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2">
+    xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2" xmlns:customcontrols="clr-namespace:SGLProject.CustomControls">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -105,8 +105,11 @@
                 Grid.Column="1"
                 Margin="34">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
+                    <RowDefinition
+                                         Height="Auto"/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
+
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -116,26 +119,28 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="Auto" MinWidth="274"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock 
+
+                    <TextBlock
                         FontSize="17"
-                        Text="Sortiraj po"
+                        Text="Poredaj"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center"
-                        Margin="8, 0"
+                        Margin="8,0"
                         Foreground="{StaticResource CaptionFontBrush}"/>
+
                     <ComboBox
                         Grid.Column="1"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center"
-                        IsDropDownOpen="True"
                         SelectedIndex="0"
                         Style="{StaticResource FlatComboBoxStyle1}">
-                        <ComboBoxItem Content="Nedavno" Style="{DynamicResource FlatComboBoxItemStyle1}"/>
+                        <ComboBoxItem Content="Nedavno" />
                         <ComboBoxItem Content="Abecedno"/>
                     </ComboBox>
+
                     <StackPanel
                         Grid.Column="2"
-                        Orientation="Horizontal" Margin="62,0,-50,0">
+                        Orientation="Horizontal">
                         <TextBlock
                             FontSize="17"
                             Text="Filtriraj"
@@ -147,27 +152,47 @@
                             VerticalAlignment="Center"
                             SelectedIndex="0"
                             Style="{StaticResource FlatComboBoxStyle1}">
-                            <ComboBoxItem Content="Sve"/>
-                            <ComboBoxItem Content="Nadolazeći"/>
-                            <ComboBoxItem Content="Prošli"/>
-
+                            <ComboBoxItem Content="Sve" />
+                            <ComboBoxItem Content="Novo"/>
+                            <ComboBoxItem Content="Staro"/>
                         </ComboBox>
                     </StackPanel>
-                    <StackPanel
-                        Grid.Column="4"
-                        HorizontalAlignment="Right"
-                        Margin="0,0,35,0">
+                    <StackPanel Grid.Column="4"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Right"
+                                Margin="0,0,35,0">
                         <RadioButton
                             Content="{StaticResource GridViewIcon}"
                             FontSize="15"
                             IsChecked="True"
                             GroupName="SwitchViewButtons"
-                            Style="{StaticResource IconOnlyRadioButtonStyle}">
-                            
-                        </RadioButton>
-
+                            Style="{StaticResource IconOnlyRadioButtonStyle}"/>
+                        <RadioButton
+                            Content="{StaticResource ListViewIcon}"
+                            FontSize="18"
+                            GroupName="SwitchViewButtons"
+                            Style="{StaticResource IconOnlyRadioButtonStyle}"
+                            Margin="20,0"/>
                     </StackPanel>
+
+                    <customcontrols:SearchBox
+                        Grid.Column="5"
+                        Margin="2"
+                        Width="255"
+                        Height="48"/>
                 </Grid>
+                <ScrollViewer Grid.Row="1"
+                              VerticalAlignment="Top"
+                              Margin="18,37,0,0"
+                              VerticalScrollBarVisibility="Auto">
+                    <WrapPanel>
+                        <customcontrols:LibraryItemCard
+                            ImageSource="../Resources/trofej.png"
+                            Margin="0,0,20,0"
+                            Title="Testno Natjecanje"/>
+                        <customcontrols:LibraryShopCard/>
+                    </WrapPanel>
+                </ScrollViewer>
             </Grid>
         </Grid>
     </Grid>

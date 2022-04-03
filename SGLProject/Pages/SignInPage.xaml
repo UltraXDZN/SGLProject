@@ -79,7 +79,7 @@
                             Foreground="{StaticResource CaptionFontBrush}"
                             FontWeight="Bold"
                             TextDecorations="None"
-                            Click="Hyperlink_Click">Se Prijavi poslije</Hyperlink>
+                            Click="Hyperlink_Click">Nastavi bez prijave</Hyperlink>
 
                     </TextBlock>
                 </StackPanel>
