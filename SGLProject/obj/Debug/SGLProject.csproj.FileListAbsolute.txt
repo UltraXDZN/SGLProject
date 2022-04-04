@@ -35,7 +35,6 @@ C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLP
 C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLProject.exe
 C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLProject.pdb
 C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Styles\ComboBoxStyle.baml
-C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLProject.csproj.AssemblyReference.cache
 E:\Zadace\SGLProject\SGLProject\obj\Debug\Resources\Icons.baml
 E:\Zadace\SGLProject\SGLProject\obj\Debug\Styles\Colors.baml
 E:\Zadace\SGLProject\SGLProject\obj\Debug\Styles\Fonts.baml
@@ -78,3 +77,14 @@ E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\LibraryItemCard.g.cs
 E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\LibraryItemCard.baml
 E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\LibraryShopCard.g.cs
 E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\LibraryShopCard.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\CustomControls\LibraryItemCard.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\CustomControls\LibraryShopCard.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\CustomControls\SearchBox.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\CustomControls\LibraryItemCard.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\CustomControls\LibraryShopCard.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\CustomControls\SearchBox.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\LogIn.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\CustomControls\LogInCredentials.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\CustomControls\LogInCredentials.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\LogIn.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLProject.csproj.AssemblyReference.cache

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Zadace\SGLProject\SGLProject\obj\Debug\
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\
 SGLProject
 none
 false
 DEBUG;TRACE
-E:\Zadace\SGLProject\SGLProject\App.xaml
-17-1756411114
-1-1405756251
-27-1803993140
-14-1004149723
-CustomControls\LibraryItemCard.xaml;CustomControls\LibraryShopCard.xaml;CustomControls\SearchBox.xaml;MainWindow.xaml;Pages\LoadingPage.xaml;Pages\PreparingToLaunchSGL.xaml;Pages\SettingsPage.xaml;Pages\SGLMain.xaml;Pages\SignInPage.xaml;Resources\Icons.xaml;Styles\ButtonStyle.xaml;Styles\Colors.xaml;Styles\ComboBoxStyle.xaml;Styles\Fonts.xaml;Styles\IconStyle.xaml;Styles\ProgressBarStyles.xaml;Styles\Window.xaml;
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\App.xaml
+19-1763679148
+1-400230271
+29-2044926813
+14-1199688468
+CustomControls\LibraryItemCard.xaml;CustomControls\LibraryShopCard.xaml;CustomControls\LogInCredentials.xaml;CustomControls\SearchBox.xaml;MainWindow.xaml;Pages\LoadingPage.xaml;Pages\LogIn.xaml;Pages\PreparingToLaunchSGL.xaml;Pages\SettingsPage.xaml;Pages\SGLMain.xaml;Pages\SignInPage.xaml;Resources\Icons.xaml;Styles\ButtonStyle.xaml;Styles\Colors.xaml;Styles\ComboBoxStyle.xaml;Styles\Fonts.xaml;Styles\IconStyle.xaml;Styles\ProgressBarStyles.xaml;Styles\Window.xaml;
 
 True
 

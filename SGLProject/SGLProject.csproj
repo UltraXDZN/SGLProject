@@ -76,11 +76,17 @@
     <Compile Include="CustomControls\LibraryShopCard.xaml.cs">
       <DependentUpon>LibraryShopCard.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\LogInCredentials.xaml.cs">
+      <DependentUpon>LogInCredentials.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\SearchBox.xaml.cs">
       <DependentUpon>SearchBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\LoadingPage.xaml.cs">
       <DependentUpon>LoadingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LogIn.xaml.cs">
+      <DependentUpon>LogIn.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PreparingToLaunchSGL.xaml.cs">
       <DependentUpon>PreparingToLaunchSGL.xaml</DependentUpon>
@@ -103,6 +109,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CustomControls\LogInCredentials.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CustomControls\SearchBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -120,6 +130,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\LoadingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\LogIn.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

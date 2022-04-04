@@ -88,6 +88,57 @@
     </Style>
 
     <Style TargetType="{x:Type Button}"
+           x:Key="LogInButtonStyle">
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="{StaticResource IconActiveBrush}"/>
+        <Setter Property="FontFamily" Value="Brutal Type"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="Width" Value="350"/>
+        <Setter Property="Margin" Value="0,0,0,0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Border
+                    BorderBrush="{StaticResource BorderBrush}"
+                    Background="{StaticResource FBBackBrush}"
+                    BorderThickness="0"
+                    CornerRadius="3">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <ContentPresenter
+                                Content="Prijavi se"
+                                Grid.Column="1"
+                                Margin="0,0,0,0"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                                <Condition Property="IsMouseCaptured" Value="False"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background"
+                                    Value="{StaticResource FBBackHoverBrush}"/>
+                            <Setter Property="FontWeight" Value="ExtraBold"/>
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Button}"
            x:Key="IconOnlyButtonStyle">
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="BorderThickness" Value="0"/>

@@ -16,24 +16,16 @@ using System.Windows.Shapes;
 namespace SGLProject.Pages
 {
     /// <summary>
-    /// Interaction logic for SignInPage.xaml
+    /// Interaction logic for LogIn.xaml
     /// </summary>
-    public partial class SignInPage : Page
+    public partial class LogIn : Page
     {
-        public SignInPage()
+        public LogIn()
         {
             InitializeComponent();
         }
 
-        private void Hyperlink_Click(object sender, RoutedEventArgs e)
-        {
-            if (Application.Current.MainWindow != null)
-            {
-                ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new Uri("../Pages/PreparingToLaunchSGL.xaml", UriKind.RelativeOrAbsolute));
-            }
-        }
-
-        private void ButtonBase_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (Application.Current.MainWindow != null)
             {
@@ -41,11 +33,11 @@ namespace SGLProject.Pages
             }
         }
 
-        private void LoginServiceButtons_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             if (Application.Current.MainWindow != null)
             {
-                ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new Uri("../Pages/LogIn.xaml", UriKind.RelativeOrAbsolute));
+                ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new Uri("../Pages/PreparingToLaunchSGL.xaml", UriKind.RelativeOrAbsolute));
             }
         }
     }
