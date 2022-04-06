@@ -94,6 +94,21 @@
     <Compile Include="Pages\SignInPage.xaml.cs">
       <DependentUpon>SignInPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\SubPages\Competitions.xaml.cs">
+      <DependentUpon>Competitions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SubPages\CompetitionsParts\ScrollViewCompetitions.xaml.cs">
+      <DependentUpon>ScrollViewCompetitions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SubPages\CompetitionsParts\ToolbarCompetitions.xaml.cs">
+      <DependentUpon>ToolbarCompetitions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SubPages\History.xaml.cs">
+      <DependentUpon>History.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SubPages\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Styles\Window.cs" />
     <Page Include="CustomControls\LibraryItemCard.xaml">
       <SubType>Designer</SubType>
@@ -136,6 +151,26 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\SignInPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SubPages\Competitions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SubPages\CompetitionsParts\ScrollViewCompetitions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SubPages\CompetitionsParts\ToolbarCompetitions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SubPages\History.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SubPages\Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

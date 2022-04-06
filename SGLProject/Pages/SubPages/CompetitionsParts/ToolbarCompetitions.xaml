@@ -1,0 +1,80 @@
+﻿<UserControl x:Class="SGLProject.Pages.SubPages.CompetitionsParts.ToolbarCompetitions"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SGLProject.Pages.SubPages.CompetitionsParts" xmlns:customcontrols="clr-namespace:SGLProject.CustomControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="48" d:DesignWidth="1538">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="178"/>
+            <ColumnDefinition Width="417"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto" MinWidth="274"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock
+            FontSize="17"
+            Text="Poredaj"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Margin="8,0"
+            Foreground="{StaticResource CaptionFontBrush}"/>
+
+        <ComboBox
+            Grid.Column="1"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            SelectedIndex="0"
+            Style="{StaticResource FlatComboBoxStyle1}">
+            <ComboBoxItem Content="Nedavno" />
+            <ComboBoxItem Content="Abecedno"/>
+        </ComboBox>
+
+        <StackPanel
+                        Grid.Column="2"
+                        Orientation="Horizontal">
+            <TextBlock
+                            FontSize="17"
+                            Text="Filtriraj"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Foreground="{StaticResource CaptionFontBrush}"/>
+            <ComboBox
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            SelectedIndex="0"
+                            Style="{StaticResource FlatComboBoxStyle1}">
+                <ComboBoxItem Content="Sve" />
+                <ComboBoxItem Content="Novo"/>
+                <ComboBoxItem Content="Staro"/>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Column="4"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Right"
+                                Margin="0,0,35,0">
+            <RadioButton
+                            Content="{StaticResource GridViewIcon}"
+                            FontSize="15"
+                            IsChecked="True"
+                            GroupName="SwitchViewButtons"
+                            Style="{StaticResource IconOnlyRadioButtonStyle}"/>
+            <RadioButton
+                            Content="{StaticResource ListViewIcon}"
+                            FontSize="18"
+                            GroupName="SwitchViewButtons"
+                            Style="{StaticResource IconOnlyRadioButtonStyle}"
+                            Margin="20,0"/>
+        </StackPanel>
+
+        <customcontrols:SearchBox
+                        Grid.Column="5"
+                        Margin="2"
+                        Width="255"
+                        Height="48"/>
+    </Grid>
+</UserControl>

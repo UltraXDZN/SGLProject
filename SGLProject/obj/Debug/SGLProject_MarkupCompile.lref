@@ -1,4 +1,4 @@
-﻿
+﻿E:\Zadace\SGLProject\SGLProject\obj\Debug\GeneratedInternalTypeHelper.g.cs
 FE:\Zadace\SGLProject\SGLProject\App.xaml;;
 FE:\Zadace\SGLProject\SGLProject\CustomControls\LibraryItemCard.xaml;;
 FE:\Zadace\SGLProject\SGLProject\CustomControls\LibraryShopCard.xaml;;
@@ -9,6 +9,11 @@ FE:\Zadace\SGLProject\SGLProject\Pages\PreparingToLaunchSGL.xaml;;
 FE:\Zadace\SGLProject\SGLProject\Pages\SettingsPage.xaml;;
 FE:\Zadace\SGLProject\SGLProject\Pages\SGLMain.xaml;;
 FE:\Zadace\SGLProject\SGLProject\Pages\SignInPage.xaml;;
+FE:\Zadace\SGLProject\SGLProject\Pages\SubPages\Competitions.xaml;;
+FE:\Zadace\SGLProject\SGLProject\Pages\SubPages\CompetitionsParts\ScrollViewCompetitions.xaml;;
+FE:\Zadace\SGLProject\SGLProject\Pages\SubPages\CompetitionsParts\ToolbarCompetitions.xaml;;
+FE:\Zadace\SGLProject\SGLProject\Pages\SubPages\History.xaml;;
+FE:\Zadace\SGLProject\SGLProject\Pages\SubPages\Home.xaml;;
 FE:\Zadace\SGLProject\SGLProject\Styles\ButtonStyle.xaml;;
 FE:\Zadace\SGLProject\SGLProject\Styles\ComboBoxStyle.xaml;;
 FE:\Zadace\SGLProject\SGLProject\Styles\IconStyle.xaml;;

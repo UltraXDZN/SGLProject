@@ -9,7 +9,7 @@
       d:DesignHeight="829" d:DesignWidth="1538"
       Title="SGLMain"
       FontFamily="Brutal Type"
-    xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2" xmlns:customcontrols="clr-namespace:SGLProject.CustomControls">
+    xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2" xmlns:customcontrols="clr-namespace:SGLProject.CustomControls" xmlns:subpages="clr-namespace:SGLProject.Pages.SubPages" xmlns:competitionsparts="clr-namespace:SGLProject.Pages.SubPages.CompetitionsParts">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -73,15 +73,18 @@
                             <attachedProperties:CheckableMenuButtons
                             Content="Početna"
                             Icon="{StaticResource HomeIcon}"
-                            Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"/>
+                            Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"
+                            Click="Home_Click"/>
                             <attachedProperties:CheckableMenuButtons
                             Content="Natjecanja"
                             Icon="{StaticResource TrophyIcon}"
-                            Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"/>
+                            Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"
+                            Click="Natjecanja_Click"/>
                             <attachedProperties:CheckableMenuButtons
                             Content="Povijest"
                             Icon="{StaticResource HistoryIcon}"
-                            Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"/>
+                            Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"
+                            Click="History_Click"/>
                         </StackPanel>
                     </attachedProperties:SideNavigationMenu.CheckableMenuButtonsContainer>
 
@@ -101,99 +104,7 @@
                     </attachedProperties:SideNavigationMenu.FooterCheckableMenuButtonsContainer>
                 </attachedProperties:SideNavigationMenu>
             </Grid>
-            <Grid
-                Grid.Column="1"
-                Margin="34">
-                <Grid.RowDefinitions>
-                    <RowDefinition
-                                         Height="Auto"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="178"/>
-                        <ColumnDefinition Width="417"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto" MinWidth="274"/>
-                    </Grid.ColumnDefinitions>
-
-                    <TextBlock
-                        FontSize="17"
-                        Text="Poredaj"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Center"
-                        Margin="8,0"
-                        Foreground="{StaticResource CaptionFontBrush}"/>
-
-                    <ComboBox
-                        Grid.Column="1"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Center"
-                        SelectedIndex="0"
-                        Style="{StaticResource FlatComboBoxStyle1}">
-                        <ComboBoxItem Content="Nedavno" />
-                        <ComboBoxItem Content="Abecedno"/>
-                    </ComboBox>
-
-                    <StackPanel
-                        Grid.Column="2"
-                        Orientation="Horizontal">
-                        <TextBlock
-                            FontSize="17"
-                            Text="Filtriraj"
-                            HorizontalAlignment="Left"
-                            VerticalAlignment="Center"
-                            Foreground="{StaticResource CaptionFontBrush}"/>
-                        <ComboBox
-                            HorizontalAlignment="Left"
-                            VerticalAlignment="Center"
-                            SelectedIndex="0"
-                            Style="{StaticResource FlatComboBoxStyle1}">
-                            <ComboBoxItem Content="Sve" />
-                            <ComboBoxItem Content="Novo"/>
-                            <ComboBoxItem Content="Staro"/>
-                        </ComboBox>
-                    </StackPanel>
-                    <StackPanel Grid.Column="4"
-                                Orientation="Horizontal"
-                                HorizontalAlignment="Right"
-                                Margin="0,0,35,0">
-                        <RadioButton
-                            Content="{StaticResource GridViewIcon}"
-                            FontSize="15"
-                            IsChecked="True"
-                            GroupName="SwitchViewButtons"
-                            Style="{StaticResource IconOnlyRadioButtonStyle}"/>
-                        <RadioButton
-                            Content="{StaticResource ListViewIcon}"
-                            FontSize="18"
-                            GroupName="SwitchViewButtons"
-                            Style="{StaticResource IconOnlyRadioButtonStyle}"
-                            Margin="20,0"/>
-                    </StackPanel>
-
-                    <customcontrols:SearchBox
-                        Grid.Column="5"
-                        Margin="2"
-                        Width="255"
-                        Height="48"/>
-                </Grid>
-                <ScrollViewer Grid.Row="1"
-                              VerticalAlignment="Top"
-                              Margin="18,37,0,0"
-                              VerticalScrollBarVisibility="Auto">
-                    <WrapPanel>
-                        <customcontrols:LibraryItemCard
-                            ImageSource="../Resources/trofej.png"
-                            Margin="0,0,20,0"
-                            Title="Testno Natjecanje"/>
-                        <customcontrols:LibraryShopCard/>
-                    </WrapPanel>
-                </ScrollViewer>
-            </Grid>
+            <Frame Grid.Column="1" Margin="34" Name="PageFrame" NavigationUIVisibility="Hidden" x:FieldModifier="public"/>
         </Grid>
     </Grid>
 </Page>

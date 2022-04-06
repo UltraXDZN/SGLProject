@@ -62,10 +62,15 @@
                                     Name="SignIn"
                                     Margin="0, 4"
                                     Foreground="{StaticResource InactiveFontBrush}"
-                                    Text="Sign In"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
-                                    Visibility="Hidden"/>
+                                    Visibility="Hidden">
+                                    <Hyperlink
+                                        Foreground="{StaticResource InactiveFontBrush}"
+                                        FontWeight="Bold"
+                                        TextDecorations="None"
+                                        Click="Hyperlink_Click">Prijavi se</Hyperlink>
+                                </TextBlock>
                             </StackPanel>
                             <Border
                                 Grid.Row="0"

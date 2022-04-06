@@ -78,3 +78,13 @@ E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\LibraryItemCard.g.cs
 E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\LibraryItemCard.baml
 E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\LibraryShopCard.g.cs
 E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\LibraryShopCard.baml
+E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\SubPages\CompetitionsParts\ScrollViewCompetitions.g.cs
+E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\SubPages\CompetitionsParts\ToolbarCompetitions.g.cs
+E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\SubPages\CompetitionsParts\ScrollViewCompetitions.baml
+E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\SubPages\CompetitionsParts\ToolbarCompetitions.baml
+E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\SubPages\Competitions.g.cs
+E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\SubPages\Competitions.baml
+E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\SubPages\Home.g.cs
+E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\SubPages\Home.baml
+E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\SubPages\History.g.cs
+E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\SubPages\History.baml

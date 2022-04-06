@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="SGLProject.Pages.SubPages.CompetitionsParts.ScrollViewCompetitions"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SGLProject.Pages.SubPages.CompetitionsParts" xmlns:customcontrols="clr-namespace:SGLProject.CustomControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="781" d:DesignWidth="1538">
+    <ScrollViewer Grid.Row="1"
+                              VerticalAlignment="Top"
+                              Margin="18,37,0,0"
+                              VerticalScrollBarVisibility="Auto">
+        <WrapPanel>
+            <customcontrols:LibraryItemCard
+                            ImageSource="../../../Resources/trofej.png"
+                            Margin="0,0,20,0"
+                            Title="Testno Natjecanje"/>
+            <customcontrols:LibraryShopCard/>
+        </WrapPanel>
+    </ScrollViewer>
+</UserControl>
