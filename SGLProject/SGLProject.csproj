@@ -82,6 +82,7 @@
     <Compile Include="CustomControls\SearchBox.xaml.cs">
       <DependentUpon>SearchBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Data\Account.cs" />
     <Compile Include="Pages\LoadingPage.xaml.cs">
       <DependentUpon>LoadingPage.xaml</DependentUpon>
     </Compile>
@@ -261,6 +262,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\trofej.png" />
+    <Resource Include="Data\accounts.xml" />
     <Content Include="Resources\trophy.svg" />
   </ItemGroup>
   <ItemGroup />

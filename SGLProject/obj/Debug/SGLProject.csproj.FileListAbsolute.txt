@@ -88,3 +88,8 @@ E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\SubPages\Home.g.cs
 E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\SubPages\Home.baml
 E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\SubPages\History.g.cs
 E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\SubPages\History.baml
+E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\LogInCredentials.g.cs
+E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\LogIn.g.cs
+E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\LogInCredentials.baml
+E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\LogIn.baml
+E:\Zadace\SGLProject\SGLProject\obj\Debug\SGLProject.csprojAssemblyReference.cache

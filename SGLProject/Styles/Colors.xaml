@@ -33,6 +33,10 @@
     <Color x:Key="CaptionFontColor">White</Color>
     <SolidColorBrush x:Key="CaptionFontBrush" Color="{StaticResource CaptionFontColor}"/>
 
+    <!-- Error Font Color -->
+    <Color x:Key="ErrorFontColor">Red</Color>
+    <SolidColorBrush x:Key="ErrorFontBrush" Color="{StaticResource ErrorFontColor}"/>
+
     <!-- Caption Button Mouse Over Color -->
     <Color x:Key="CaptionButtonMouseOverColor">#54B1DD</Color>
     <SolidColorBrush x:Key="CaptionButtonMouseOverBrush" Color="{StaticResource CaptionButtonMouseOverColor}"/>

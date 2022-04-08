@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Accounts>
+	<Account>
+		<Username>Test</Username>
+		<PasswordHash>QSS8CpM1wn8IbyS6IHpJEg==</PasswordHash>
+	</Account>
+  <Account>
+    <Username>Gas</Username>
+    <PasswordHash>QSS8CpM1wn8IbyS6IHpJEg==</PasswordHash>
+  </Account>
+</Accounts>

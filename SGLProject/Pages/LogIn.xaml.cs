@@ -1,25 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Security.Cryptography;
+using System.Text;
+using System.Xml;
 
 namespace SGLProject.Pages
 {
-    /// <summary>
-    /// Interaction logic for LogIn.xaml
-    /// </summary>
     public partial class LogIn : Page
     {
+        string username;
+        string password;
+
+        bool checkedUsername = false;
+        bool checkedPassword = false;
+
+        XmlDocument db = new XmlDocument();
+        string URLString = "../../Data/accounts.xml";
+
+
         public LogIn()
         {
             InitializeComponent();
@@ -35,10 +34,51 @@ namespace SGLProject.Pages
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if (Application.Current.MainWindow != null)
+            username = Username.Title;
+            password = Encrypt(Password.Title);
+            db.Load(URLString);
+
+            XmlNodeList accounts = db.ChildNodes[1].ChildNodes;
+
+
+            for (int i = 0; i < accounts.Count; i++)
             {
-                ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new Uri("../Pages/PreparingToLaunchSGL.xaml", UriKind.RelativeOrAbsolute));
+                XmlNodeList account = accounts[i].ChildNodes;
+
+                checkedUsername = checkedUsername || CheckUsername(account[0].InnerText);
+                checkedPassword = checkedPassword || CheckPassword(account[1].InnerText);
+
+                if (checkedUsername && checkedPassword)
+                {
+                    if (Application.Current.MainWindow != null)
+                    {
+                        ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new Uri("../Pages/PreparingToLaunchSGL.xaml", UriKind.RelativeOrAbsolute));
+                    }
+                    break;
+                }
+                else if (!checkedUsername)
+                {
+                    Error.Text = $"Krivo korisničko ime!";
+                }
+                else if (!checkedPassword)
+                {
+                    Error.Text = $"Kriva lozinka! {password}";
+                }
             }
         }
+
+        public static string Encrypt(string value)
+        {
+            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
+            {
+                UTF8Encoding utf8 = new UTF8Encoding();
+                byte[] data = md5.ComputeHash(utf8.GetBytes(value));
+                return Convert.ToBase64String(data);
+            }
+        }
+
+        bool CheckUsername(string value) => username == value;
+        bool CheckPassword(string value) => password == value;
+
     }
 }

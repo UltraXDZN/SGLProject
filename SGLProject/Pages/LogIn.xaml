@@ -47,8 +47,9 @@
                     Margin="75, 20, 0, 25"/>
 
                     <customcontrols:LogInCredentials 
+                        x:Name="Username"
                         HorizontalAlignment="Center"
-                        Title="Unesite korisničko ime"/>
+                        PreTitle="Unesite korisničko ime"/>
 
                     <TextBlock
                     Text="Zaporka:"
@@ -60,9 +61,10 @@
                     VerticalAlignment="Top"
                     Margin="75, 20, 0, 25"/>
 
-                    <customcontrols:LogInCredentials 
+                    <customcontrols:LogInCredentials
+                        x:Name="Password"
                         HorizontalAlignment="Center"
-                        Title="Unesite zaporku"/>
+                        PreTitle="Unesite zaporku"/>
 
                     <!--<TextBlock
                         Foreground="{StaticResource DisabledFontBrush}"
@@ -89,8 +91,12 @@
                     </TextBlock>-->
                     <Button Style="{StaticResource LogInButtonStyle}"
                             Margin="0,50" Click="Button_Click_1"/>
-
+                    <TextBlock
+                    x:Name="Error"
+                    Foreground="{StaticResource ErrorFontBrush}"
+                    HorizontalAlignment="Center"/>
                 </StackPanel>
+                
             </Grid>
         </Border>
         <Button

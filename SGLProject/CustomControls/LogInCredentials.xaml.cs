@@ -25,6 +25,15 @@ namespace SGLProject.CustomControls
             InitializeComponent();
         }
 
+        public string PreTitle
+        {
+            get => (string)GetValue(PreTitleProperty);
+            set => SetValue(PreTitleProperty, value);
+        }
+
+        public static readonly DependencyProperty PreTitleProperty =
+            DependencyProperty.Register("PreTitle", typeof(string), typeof(LogInCredentials));
+
         public string Title
         {
             get => (string)GetValue(TitleProperty);
