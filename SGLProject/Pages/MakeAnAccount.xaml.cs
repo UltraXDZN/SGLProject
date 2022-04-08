@@ -7,19 +7,18 @@ using System.Xml;
 
 namespace SGLProject.Pages
 {
-    public partial class LogIn : Page
+    public partial class MakeAnAccount : Page
     {
         string username;
         string password;
 
         bool checkedUsername = false;
-        bool checkedPassword = false;
 
         XmlDocument db = new XmlDocument();
         string URLString = "../../Data/accounts.xml";
 
 
-        public LogIn()
+        public MakeAnAccount()
         {
             InitializeComponent();
         }
@@ -40,30 +39,31 @@ namespace SGLProject.Pages
 
             XmlNodeList accounts = db.ChildNodes[1].ChildNodes;
 
-
+            bool canMakeAccount = true;
             for (int i = 0; i < accounts.Count; i++)
             {
                 XmlNodeList account = accounts[i].ChildNodes;
 
                 checkedUsername = checkedUsername || CheckUsername(account[0].InnerText);
-                checkedPassword = checkedPassword || CheckPassword(account[1].InnerText);
 
-                if (checkedUsername && checkedPassword)
+                if (checkedUsername)
                 {
-                    if (Application.Current.MainWindow != null)
-                    {
-                        ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new Uri("../Pages/PreparingToLaunchSGL.xaml", UriKind.RelativeOrAbsolute));
-                    }
-                    break;
+                    canMakeAccount = false;
+                    Error.Text = "Račun s korisničkim imenom već postoji!";
                 }
-                else if (!checkedUsername)
-                {
-                    Error.Text = $"Krivo korisničko ime!";
-                }
-                else if (!checkedPassword)
-                {
-                    Error.Text = $"Kriva lozinka! {password}";
-                }
+            }
+
+            if (canMakeAccount)
+            {
+                XmlDocument xd2 = new XmlDocument();
+                xd2.LoadXml("" +
+                    "<Account>" +
+                    $"   <Username>{username}</Username>" +
+                    $"   <PasswordHash>{password}</PasswordHash>" +
+                    "</Account>");
+                XmlNode n = db.ImportNode(xd2.FirstChild, true);
+                db.ChildNodes[1].AppendChild(n);
+                db.Save(URLString);
             }
         }
 
@@ -78,7 +78,6 @@ namespace SGLProject.Pages
         }
 
         bool CheckUsername(string value) => username == value;
-        bool CheckPassword(string value) => password == value;
 
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
         {

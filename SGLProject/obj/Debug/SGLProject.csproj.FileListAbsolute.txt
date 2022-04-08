@@ -92,4 +92,6 @@ E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\LogInCredentials.g.cs
 E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\LogIn.g.cs
 E:\Zadace\SGLProject\SGLProject\obj\Debug\CustomControls\LogInCredentials.baml
 E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\LogIn.baml
+E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\MakeAnAccount.g.cs
+E:\Zadace\SGLProject\SGLProject\obj\Debug\Pages\MakeAnAccount.baml
 E:\Zadace\SGLProject\SGLProject\obj\Debug\SGLProject.csprojAssemblyReference.cache

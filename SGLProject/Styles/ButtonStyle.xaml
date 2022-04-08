@@ -87,8 +87,7 @@
         </Setter>
     </Style>
 
-    <Style TargetType="{x:Type Button}"
-           x:Key="LogInButtonStyle">
+    <Style TargetType="{x:Type attachedProperties:LogInButtons}">
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Cursor" Value="Hand"/>
         <Setter Property="HorizontalContentAlignment" Value="Left"/>
@@ -102,7 +101,7 @@
         <Setter Property="Margin" Value="0,0,0,0"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate>
+                <ControlTemplate TargetType="{x:Type attachedProperties:LogInButtons}">
                     <Border
                     BorderBrush="{StaticResource BorderBrush}"
                     Background="{StaticResource FBBackBrush}"
@@ -115,7 +114,6 @@
                             </Grid.ColumnDefinitions>
 
                             <ContentPresenter
-                                Content="Prijavi se"
                                 Grid.Column="1"
                                 Margin="0,0,0,0"
                                 HorizontalAlignment="Center"

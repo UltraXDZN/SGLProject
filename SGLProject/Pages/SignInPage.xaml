@@ -71,7 +71,8 @@
                         <Hyperlink
                             Foreground="{StaticResource CaptionFontBrush}"
                             FontWeight="Bold"
-                            TextDecorations="None">Izradi račun</Hyperlink>
+                            TextDecorations="None"
+                            Click="Hyperlink_Click_1">Izradi račun</Hyperlink>
                         <Run Text="ili"/>
                         <LineBreak/>
                         <Hyperlink

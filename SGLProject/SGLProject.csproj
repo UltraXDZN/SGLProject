@@ -59,6 +59,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Attached Properties\BasicMenuButtons.cs" />
+    <Compile Include="Attached Properties\LogInButtons.cs" />
     <Compile Include="Attached Properties\LoginServiceButtons.cs" />
     <Compile Include="Attached Properties\CheckableMenuButtons.cs" />
     <Compile Include="Attached Properties\SideNavigationMenu.cs" />
@@ -85,6 +86,9 @@
     <Compile Include="Data\Account.cs" />
     <Compile Include="Pages\LoadingPage.xaml.cs">
       <DependentUpon>LoadingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MakeAnAccount.xaml.cs">
+      <DependentUpon>MakeAnAccount.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\LogIn.xaml.cs">
       <DependentUpon>LogIn.xaml</DependentUpon>
@@ -148,6 +152,10 @@
     <Page Include="Pages\LoadingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MakeAnAccount.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\LogIn.xaml">
       <SubType>Designer</SubType>

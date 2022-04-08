@@ -48,5 +48,13 @@ namespace SGLProject.Pages
                 ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new Uri("../Pages/LogIn.xaml", UriKind.RelativeOrAbsolute));
             }
         }
+
+        private void Hyperlink_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (Application.Current.MainWindow != null)
+            {
+                ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new Uri("../Pages/MakeAnAccount.xaml", UriKind.RelativeOrAbsolute));
+            }
+        }
     }
 }
