@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows.Controls;
+using System.Xml;
 
 namespace SGLProject.Pages.SubPages
 {
@@ -20,9 +8,28 @@ namespace SGLProject.Pages.SubPages
     /// </summary>
     public partial class Home : UserControl
     {
+        string username;
+        string password;
+
+        string accountDataStored = "../../Data/LoggedInAccount.xml";
+
         public Home()
         {
             InitializeComponent();
+            LoadAccountData();
+            if (!string.IsNullOrEmpty(username)) WelcomeMsg.Text += $", {username}";
+            
+            
+        }
+        private void LoadAccountData()
+        {
+            XmlDocument accountData = new XmlDocument();
+            accountData.Load(accountDataStored);
+            using (XmlNodeList account = accountData.ChildNodes)
+            {
+                username = account[1].ChildNodes[0].InnerText;
+                password = account[1].ChildNodes[1].InnerText;
+            }
         }
     }
 }

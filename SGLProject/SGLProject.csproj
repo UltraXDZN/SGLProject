@@ -271,6 +271,7 @@
   <ItemGroup>
     <Resource Include="Resources\trofej.png" />
     <Resource Include="Data\accounts.xml" />
+    <Resource Include="Data\LoggedInAccount.xml" />
     <Content Include="Resources\trophy.svg" />
   </ItemGroup>
   <ItemGroup />

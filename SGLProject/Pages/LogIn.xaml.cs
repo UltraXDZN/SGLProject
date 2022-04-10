@@ -16,7 +16,8 @@ namespace SGLProject.Pages
         bool checkedPassword = false;
 
         XmlDocument db = new XmlDocument();
-        string URLString = "../../Data/accounts.xml";
+        string accountsDataDB = "../../Data/accounts.xml";
+        string accountDataStored = "../../Data/LoggedInAccount.xml";
 
 
         public LogIn()
@@ -36,7 +37,7 @@ namespace SGLProject.Pages
         {
             username = Username.Title;
             password = Encrypt(Password.Title);
-            db.Load(URLString);
+            db.Load(accountsDataDB);
 
             XmlNodeList accounts = db.ChildNodes[1].ChildNodes;
 
@@ -50,6 +51,15 @@ namespace SGLProject.Pages
 
                 if (checkedUsername && checkedPassword)
                 {
+                    XmlDocument accountData = new XmlDocument();
+                    accountData.LoadXml(
+                        "<?xml version=\"1.0\" encoding=\"utf-8\" ?>" +
+                        "<Account>" +
+                        $"   <Username>{username}</Username>" +
+                        $"   <PasswordHash>{password}</PasswordHash>" +
+                        "</Account>");
+                    accountData.Save(accountDataStored);
+
                     if (Application.Current.MainWindow != null)
                     {
                         ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new Uri("../Pages/PreparingToLaunchSGL.xaml", UriKind.RelativeOrAbsolute));

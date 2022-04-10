@@ -9,7 +9,8 @@
     <Grid
                 Grid.Column="1" Margin="34">
         <TextBlock
-                    Text="Dobrodošli"
+            x:Name="WelcomeMsg"
+            Text="Dobrodošli"
                     FontSize="50"
                     Foreground="{StaticResource CaptionFontBrush}"/>
 

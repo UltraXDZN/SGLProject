@@ -17,6 +17,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Border
+            x:Name="NoLogInNotif"
             Grid.Row="0"
             Style="{StaticResource SignInPopup}">
             <StackPanel
