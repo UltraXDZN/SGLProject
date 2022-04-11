@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml;
 
 namespace SGLProject.Pages
 {
@@ -21,6 +22,7 @@ namespace SGLProject.Pages
     /// </summary>
     public partial class SettingsPage : Page
     {
+        string accountDataStored = "../../Data/LoggedInAccount.xml";
         public SettingsPage()
         {
             InitializeComponent();
@@ -43,6 +45,25 @@ namespace SGLProject.Pages
             }
 
             e.Handled = true;
+        }
+
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        {
+
+            XmlDocument accountData = new XmlDocument();
+            accountData.LoadXml(
+                "<?xml version=\"1.0\" encoding=\"utf-8\" ?>" +
+                "<Account>" +
+                "   <Username></Username>" +
+                "   <PasswordHash></PasswordHash>" +
+                "   <isAdmin></isAdmin>" +
+                "</Account>");
+            accountData.Save(accountDataStored);
+
+            if (Application.Current.MainWindow != null)
+            {
+                ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new Uri("../Pages/SignInPage.xaml", UriKind.RelativeOrAbsolute));
+            }
         }
     }
 }

@@ -9,18 +9,29 @@ namespace SGLProject.Pages
     using System.Linq;
     using System.Windows.Media;
     using System.Windows.Navigation;
+    using System.Xml;
 
     /// <summary>
     /// Interaction logic for SGLMain.xaml
     /// </summary>
     public partial class SGLMain : Page
     {
+        string username;
+        string password;
+        bool isAdmin;
+
+        string accountDataStored = "../../Data/LoggedInAccount.xml";
+
         private Frame frame;
         public SGLMain()
         {
             InitializeComponent();
             frame = PageFrame;
             frame.Navigate(new Uri("Pages/SubPages/Home.xaml", UriKind.RelativeOrAbsolute));
+
+            LoadAccountData();
+            if (!isAdmin) Administration.Visibility = Visibility.Hidden; 
+            else Administration.Visibility = Visibility.Visible;
         }
 
 
@@ -53,6 +64,23 @@ namespace SGLProject.Pages
         private void History_Click(object sender, RoutedEventArgs e)
         {
             frame.Navigate(new Uri("Pages/SubPages/History.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void LoadAccountData()
+        {
+            XmlDocument accountData = new XmlDocument();
+            accountData.Load(accountDataStored);
+            using (XmlNodeList account = accountData.ChildNodes)
+            {
+                username = account[1].ChildNodes[0].InnerText;
+                password = account[1].ChildNodes[1].InnerText;
+                isAdmin = account[1].ChildNodes[2].InnerText == "True";
+            }
+        }
+
+        private void Administration_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(new Uri("Pages/SubPages/Administration.xaml", UriKind.RelativeOrAbsolute));
         }
     }
 }

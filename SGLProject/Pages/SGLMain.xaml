@@ -86,6 +86,13 @@
                             Icon="{StaticResource HistoryIcon}"
                             Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"
                             Click="History_Click"/>
+                            
+                            <attachedProperties:CheckableMenuButtons
+                                x:Name="Administration"
+                            Content="Administracija"
+                            Icon="{StaticResource CommunityIcon}"
+                            Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"
+                            Click="Administration_Click"/>
                         </StackPanel>
                     </attachedProperties:SideNavigationMenu.CheckableMenuButtonsContainer>
 

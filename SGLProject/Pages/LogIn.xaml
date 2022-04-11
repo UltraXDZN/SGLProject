@@ -74,7 +74,8 @@
                     <customcontrols:LogInCredentials
                         x:Name="Password"
                         HorizontalAlignment="Center"
-                        PreTitle="Unesite zaporku"/>
+                        PreTitle="Unesite zaporku"
+                        IsPasswordField="True"/>
 
                     <attachedProperties:LogInButtons
                             Content="Prijavi se"

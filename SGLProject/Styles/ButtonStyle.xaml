@@ -300,21 +300,21 @@
                             </Grid.ColumnDefinitions>
 
                             <Path
-    Name="Icon"
-    Fill="{TemplateBinding Foreground}"
-    Data="{TemplateBinding Icon}"
-    HorizontalAlignment="Right"
-    VerticalAlignment="Center"
-    Width="23"/>
+                                Name="Icon"
+                                Fill="{TemplateBinding Foreground}"
+                                Data="{TemplateBinding Icon}"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                Width="23"/>
 
                             <TextBlock
-    Grid.Column="1"
-    Name="text"
-    Text="{TemplateBinding Content}"
-    TextWrapping="Wrap"
-    HorizontalAlignment="Left"
-    VerticalAlignment="Center"
-    Margin="36,0,0,0"/>
+                                Grid.Column="1"
+                                Name="text"
+                                Text="{TemplateBinding Content}"
+                                TextWrapping="Wrap"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Margin="36,0,0,0"/>
 
                         </Grid>
                     </Border>

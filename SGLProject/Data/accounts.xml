@@ -3,13 +3,16 @@
   <Account>
     <Username>Test</Username>
     <PasswordHash>QSS8CpM1wn8IbyS6IHpJEg==</PasswordHash>
+    <isAdmin>True</isAdmin>"
   </Account>
   <Account>
     <Username>Gas</Username>
     <PasswordHash>QSS8CpM1wn8IbyS6IHpJEg==</PasswordHash>
+    <isAdmin>False</isAdmin>"
   </Account>
   <Account>
     <Username>123</Username>
     <PasswordHash>9WGq9u8L8U1CCLtGpMyzrQ==</PasswordHash>
+    <isAdmin>False</isAdmin>"
   </Account>
 </Accounts>

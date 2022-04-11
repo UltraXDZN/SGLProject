@@ -562,8 +562,9 @@
                     <TextBlock>
                         <Hyperlink 
                             FontWeight="Normal"
-                            RequestNavigate="Hyperlink_OnRequestNavigate"
-                            NavigateUri="https://www.youtube.com/watch?v=dQw4w9WgXcQ">O SGLu</Hyperlink>
+                            Click="Hyperlink_Click">Odjava</Hyperlink>
+                            <!--RequestNavigate="Hyperlink_OnRequestNavigate"-->
+                            
                     </TextBlock>
                     <Rectangle
                         Width="1.5"

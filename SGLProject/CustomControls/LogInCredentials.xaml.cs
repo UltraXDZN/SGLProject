@@ -42,5 +42,19 @@ namespace SGLProject.CustomControls
 
         public static readonly DependencyProperty TitleProperty =
             DependencyProperty.Register("Title", typeof(string), typeof(LogInCredentials));
+
+        public bool IsPasswordField
+        {
+            get => (bool)GetValue(isPasswordFieldProperty);
+            set => SetValue(isPasswordFieldProperty, value);
+        }
+
+        public static readonly DependencyProperty isPasswordFieldProperty =
+            DependencyProperty.Register("isPasswordField", typeof(bool), typeof(LogInCredentials));
+
+        private void ClearBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Title = "";
+        }
     }
 }

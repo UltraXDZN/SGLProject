@@ -1,0 +1,207 @@
+﻿++Solution 'SGLProject' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:SGLProject.sln
+++SGLProject
+i:{00000000-0000-0000-0000-000000000000}:SGLProject
+++Properties
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\properties\
+++References
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:
+++Attached Properties
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\attached properties\
+++BasicMenuButtons.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\attached properties\basicmenubuttons.cs
+++CheckableMenuButtons.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\attached properties\checkablemenubuttons.cs
+++LogInButtons.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\attached properties\loginbuttons.cs
+++LoginServiceButtons.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\attached properties\loginservicebuttons.cs
+++SideNavigationMenu.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\attached properties\sidenavigationmenu.cs
+++Converters
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\converters\
+++ArcEndPointConverter.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\converters\arcendpointconverter.cs
+++ArcSizeConverter.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\converters\arcsizeconverter.cs
+++LocalEx.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\converters\localex.cs
+++NotZeroConverter.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\converters\notzeroconverter.cs
+++PositiveToNegativeConverter.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\converters\positivetonegativeconverter.cs
+++RotateTransformCentreConverter.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\converters\rotatetransformcentreconverter.cs
+++StartPointConverter.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\converters\startpointconverter.cs
+++TextToBoolConverter.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\converters\texttoboolconverter.cs
+++CustomControls
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\customcontrols\
+++LibraryItemCard.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\customcontrols\libraryitemcard.xaml
+++LibraryItemCard.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\customcontrols\libraryitemcard.xaml.cs
+++LibraryShopCard.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\customcontrols\libraryshopcard.xaml
+++LogInCredentials.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\customcontrols\logincredentials.xaml
+++LogInCredentials.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\customcontrols\logincredentials.xaml.cs
+++SearchBox.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\customcontrols\searchbox.xaml
+++Data
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\data\
+++Account.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\data\account.cs
+++accounts.xml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\data\accounts.xml
+++LoggedInAccount.xml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\data\loggedinaccount.xml
+++Pages
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\
+++SubPages
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\subpages\
+++LoadingPage.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\loadingpage.xaml
+++LogIn.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\login.xaml
+++MakeAnAccount.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\makeanaccount.xaml
+++MakeAnAccount.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\makeanaccount.xaml.cs
+++PreparingToLaunchSGL.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\preparingtolaunchsgl.xaml
+++SettingsPage.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\settingspage.xaml
+++SGLMain.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\sglmain.xaml
+++SignInPage.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\signinpage.xaml
+++Resources
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\resources\
+++Carnet.png
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\resources\carnet.png
+++googleicon.png
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\resources\googleicon.png
+++Icons.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\resources\icons.xaml
+++trofej.png
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\resources\trofej.png
+++trophy.svg
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\resources\trophy.svg
+++ZvaneCrnjeTournamentLogo.png
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\resources\zvanecrnjetournamentlogo.png
+++ZvaneCrnjeTournamentLogoNoGlow.png
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\resources\zvanecrnjetournamentlogonoglow.png
+++Styles
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\styles\
+++ButtonStyle.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\styles\buttonstyle.xaml
+++Colors.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\styles\colors.xaml
+++ComboBoxStyle.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\styles\comboboxstyle.xaml
+++Fonts.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\styles\fonts.xaml
+++IconStyle.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\styles\iconstyle.xaml
+++ProgressBarStyles.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\styles\progressbarstyles.xaml
+++Window.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\styles\window.cs
+++Window.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\styles\window.xaml
+++App.config
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\app.config
+++App.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\app.xaml
+++MainWindow.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\mainwindow.xaml
+++AssemblyInfo.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\properties\assemblyinfo.cs
+++Resources.resx
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\properties\resources.resx
+++Settings.settings
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\properties\settings.settings
+++Microsoft.CSharp
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:
+++PresentationCore
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:
+++PresentationFramework
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:
+++PresentationFramework.Aero2
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:
+++System
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:
+++System.Core
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:
+++System.Data
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:
+++System.Data.DataSetExtensions
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:
+++System.Net.Http
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:
+++System.Xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:
+++System.Xml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:
+++System.Xml.Linq
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:
+++WindowsBase
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:
+++LibraryShopCard.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\customcontrols\libraryshopcard.xaml.cs
+++SearchBox.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\customcontrols\searchbox.xaml.cs
+++CompetitionsParts
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\subpages\competitionsparts\
+++Competitions.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\subpages\competitions.xaml
+++History.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\subpages\history.xaml
+++Home.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\subpages\home.xaml
+++LoadingPage.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\loadingpage.xaml.cs
+++LogIn.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\login.xaml.cs
+++PreparingToLaunchSGL.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\preparingtolaunchsgl.xaml.cs
+++SettingsPage.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\settingspage.xaml.cs
+++SGLMain.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\sglmain.xaml.cs
+++SignInPage.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\signinpage.xaml.cs
+++App.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\app.xaml.cs
+++MainWindow.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\mainwindow.xaml.cs
+++Resources.Designer.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\properties\resources.designer.cs
+++Settings.Designer.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\properties\settings.designer.cs
+++ScrollViewCompetitions.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\subpages\competitionsparts\scrollviewcompetitions.xaml
+++ToolbarCompetitions.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\subpages\competitionsparts\toolbarcompetitions.xaml
+++Competitions.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\subpages\competitions.xaml.cs
+++History.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\subpages\history.xaml.cs
+++Home.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\subpages\home.xaml.cs
+++ScrollViewCompetitions.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\subpages\competitionsparts\scrollviewcompetitions.xaml.cs
+++ToolbarCompetitions.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\subpages\competitionsparts\toolbarcompetitions.xaml.cs
+++password.ttf
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\resources\password.ttf
+++NewFolder1
+++AdministrationParts
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\subpages\administrationparts\
+++Administration.xaml
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\subpages\administration.xaml
+++Administration.xaml.cs
+i:{7a16633a-b72f-454a-838c-0442f6f6902d}:c:\users\ucenik\desktop\juraj crljenko\niop\sglproject\sglproject\pages\subpages\administration.xaml.cs

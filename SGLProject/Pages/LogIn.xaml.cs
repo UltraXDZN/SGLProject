@@ -14,6 +14,7 @@ namespace SGLProject.Pages
 
         bool checkedUsername = false;
         bool checkedPassword = false;
+        bool isAdmin = false;
 
         XmlDocument db = new XmlDocument();
         string accountsDataDB = "../../Data/accounts.xml";
@@ -48,6 +49,7 @@ namespace SGLProject.Pages
 
                 checkedUsername = checkedUsername || CheckUsername(account[0].InnerText);
                 checkedPassword = checkedPassword || CheckPassword(account[1].InnerText);
+                isAdmin = CheckAdmin(account[2].InnerText);
 
                 if (checkedUsername && checkedPassword)
                 {
@@ -57,6 +59,7 @@ namespace SGLProject.Pages
                         "<Account>" +
                         $"   <Username>{username}</Username>" +
                         $"   <PasswordHash>{password}</PasswordHash>" +
+                        $"   <isAdmin>{isAdmin}</isAdmin>" +
                         "</Account>");
                     accountData.Save(accountDataStored);
 
@@ -89,6 +92,7 @@ namespace SGLProject.Pages
 
         bool CheckUsername(string value) => username == value;
         bool CheckPassword(string value) => password == value;
+        bool CheckAdmin(string value) => value == "True";
 
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
         {
