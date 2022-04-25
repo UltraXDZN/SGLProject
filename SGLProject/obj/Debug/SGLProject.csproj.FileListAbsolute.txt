@@ -119,3 +119,5 @@ C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Page
 C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\SGLProject.csproj.AssemblyReference.cache
 C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\SubPages\Administration.g.cs
 C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\SubPages\Administration.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\CustomControls\UserManagement.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\CustomControls\UserManagement.baml
