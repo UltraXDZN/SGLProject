@@ -10,15 +10,14 @@ namespace SGLProject.Pages
     using System.Windows.Media;
     using System.Windows.Navigation;
     using System.Xml;
+    using Data;
 
     /// <summary>
     /// Interaction logic for SGLMain.xaml
     /// </summary>
     public partial class SGLMain : Page
     {
-        string username;
-        string password;
-        bool isAdmin;
+        Account curAcc = new Account();
 
         string accountDataStored = "../../Data/LoggedInAccount.xml";
 
@@ -30,7 +29,10 @@ namespace SGLProject.Pages
             frame.Navigate(new Uri("Pages/SubPages/Home.xaml", UriKind.RelativeOrAbsolute));
 
             LoadAccountData();
-            if (!isAdmin) Administration.Visibility = Visibility.Hidden; 
+
+            NoLogInNotif.Visibility = curAcc == null ? Visibility.Visible : Visibility.Collapsed;
+
+            if (!curAcc.IsAdmin) Administration.Visibility = Visibility.Hidden;
             else Administration.Visibility = Visibility.Visible;
         }
 
@@ -52,7 +54,7 @@ namespace SGLProject.Pages
         }
 
         private void Home_Click(object sender, RoutedEventArgs e)
-        {   
+        {
             frame.Navigate(new Uri("Pages/SubPages/Home.xaml", UriKind.RelativeOrAbsolute));
         }
 
@@ -70,11 +72,15 @@ namespace SGLProject.Pages
         {
             XmlDocument accountData = new XmlDocument();
             accountData.Load(accountDataStored);
+
             using (XmlNodeList account = accountData.ChildNodes)
             {
-                username = account[1].ChildNodes[0].InnerText;
-                password = account[1].ChildNodes[1].InnerText;
-                isAdmin = account[1].ChildNodes[2].InnerText == "True";
+
+                curAcc.Useraname = account[1].ChildNodes[0].InnerText;
+                curAcc.Password = account[1].ChildNodes[1].InnerText;
+                curAcc.IsAdmin = account[1].ChildNodes[2].InnerText == "True";
+
+
             }
         }
 

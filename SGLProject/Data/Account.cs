@@ -10,10 +10,12 @@ namespace SGLProject.Data
     {
         string useraname;
         string passwordHash;
+        string password;
         bool isAdmin;
 
         public string Useraname { get => useraname; set => useraname = value; }
         public string PasswordHash { get => passwordHash; set => passwordHash = value; }
+        public string Password { get => password; set => password = value; }
         public bool IsAdmin { get => isAdmin; set => isAdmin = value; }
 
         public Account(string useraname, string passwordHash, bool adminCheck = false)

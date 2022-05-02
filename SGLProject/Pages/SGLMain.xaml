@@ -19,7 +19,7 @@
         <Border
             x:Name="NoLogInNotif"
             Grid.Row="0"
-            Style="{StaticResource SignInPopup}">
+            Style="{StaticResource SignInPopup}" Visibility="Visible">
             <StackPanel
                 Orientation="Horizontal">
                 <TextBlock
