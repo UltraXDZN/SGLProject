@@ -75,18 +75,20 @@ namespace SGLProject.Pages
 
             using (XmlNodeList account = accountData.ChildNodes)
             {
-
                 curAcc.Useraname = account[1].ChildNodes[0].InnerText;
                 curAcc.Password = account[1].ChildNodes[1].InnerText;
                 curAcc.IsAdmin = account[1].ChildNodes[2].InnerText == "True";
-
-
             }
         }
 
         private void Administration_Click(object sender, RoutedEventArgs e)
         {
             frame.Navigate(new Uri("Pages/SubPages/Administration.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void Teams_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(new Uri("Pages/SubPages/Teams.xaml", UriKind.RelativeOrAbsolute));
         }
     }
 }

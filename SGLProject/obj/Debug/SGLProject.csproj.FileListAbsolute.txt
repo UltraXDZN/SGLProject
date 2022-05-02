@@ -121,3 +121,5 @@ C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Page
 C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\SubPages\Administration.baml
 C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\CustomControls\UserManagement.g.cs
 C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\CustomControls\UserManagement.baml
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\SubPages\Teams.g.cs
+C:\Users\Ucenik\Desktop\Juraj Crljenko\NiOP\SGLProject\SGLProject\obj\Debug\Pages\SubPages\Teams.baml

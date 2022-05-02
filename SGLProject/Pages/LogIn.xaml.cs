@@ -7,18 +7,25 @@ using System.Xml;
 
 namespace SGLProject.Pages
 {
+    using Data;
+    using System.Windows.Media;
+    using System.Windows.Media.Imaging;
+    using System.Xml.Linq;
+
     public partial class LogIn : Page
     {
-        string username;
-        string password;
+        Account account;
 
         bool checkedUsername = false;
         bool checkedPassword = false;
-        bool isAdmin = false;
+        
+
+
 
         XmlDocument db = new XmlDocument();
         string accountsDataDB = "../../Data/accounts.xml";
         string accountDataStored = "../../Data/LoggedInAccount.xml";
+        string teamsDataDB = "../../Data/teams.xml";
 
 
         public LogIn()
@@ -36,8 +43,8 @@ namespace SGLProject.Pages
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            username = Username.Title;
-            password = Encrypt(Password.Title);
+            account.Useraname = Username.Title;
+            account.PasswordHash = Encrypt(Password.Title);
             db.Load(accountsDataDB);
 
             XmlNodeList accounts = db.ChildNodes[1].ChildNodes;
@@ -45,11 +52,12 @@ namespace SGLProject.Pages
 
             for (int i = 0; i < accounts.Count; i++)
             {
-                XmlNodeList account = accounts[i].ChildNodes;
+                XmlNodeList _account = accounts[i].ChildNodes;
 
-                checkedUsername = checkedUsername || CheckUsername(account[0].InnerText);
-                checkedPassword = checkedPassword || CheckPassword(account[1].InnerText);
-                isAdmin = CheckAdmin(account[2].InnerText);
+                checkedUsername = checkedUsername || CheckUsername(_account[0].InnerText);
+                checkedPassword = checkedPassword || CheckPassword(_account[1].InnerText);
+                account.IsAdmin = CheckAdmin(_account[2].InnerText);
+                account.Team = AssignTeam(_account[3].InnerText);
 
                 if (checkedUsername && checkedPassword)
                 {
@@ -57,9 +65,10 @@ namespace SGLProject.Pages
                     accountData.LoadXml(
                         "<?xml version=\"1.0\" encoding=\"utf-8\" ?>" +
                         "<Account>" +
-                        $"   <Username>{username}</Username>" +
-                        $"   <PasswordHash>{password}</PasswordHash>" +
-                        $"   <isAdmin>{isAdmin}</isAdmin>" +
+                        $"   <Username>{account.Useraname}</Username>" +
+                        $"   <PasswordHash>{account.PasswordHash}</PasswordHash>" +
+                        $"   <isAdmin>{account.IsAdmin}</isAdmin>" +
+                        $"   <Team>{account.Team.TeamName}</Team>" +
                         "</Account>");
                     accountData.Save(accountDataStored);
 
@@ -75,7 +84,7 @@ namespace SGLProject.Pages
                 }
                 else if (!checkedPassword)
                 {
-                    Error.Text = $"Kriva lozinka! {password}";
+                    Error.Text = $"Kriva lozinka!";
                 }
             }
         }
@@ -90,8 +99,8 @@ namespace SGLProject.Pages
             }
         }
 
-        bool CheckUsername(string value) => username == value;
-        bool CheckPassword(string value) => password == value;
+        bool CheckUsername(string value) => account.Useraname == value;
+        bool CheckPassword(string value) => account.PasswordHash == value;
         bool CheckAdmin(string value) => value == "True";
 
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
@@ -100,6 +109,22 @@ namespace SGLProject.Pages
             {
                 ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new Uri("../Pages/SignInPage.xaml", UriKind.RelativeOrAbsolute));
             }
+        }
+
+        private Team AssignTeam(string teamName)
+        {
+            Team foundTeam = new Team();
+            var temp = XDocument.Load(accountDataStored);
+            
+            foreach (XElement accounttemp in temp.Root.Elements("Team"))
+            {
+                if (accounttemp.Element("TeamName").Value == account.Useraname)
+                {
+                    foundTeam.TeamName = accounttemp.Element("TeamName").Value;
+                    foundTeam.Logo = new BitmapImage(new Uri(accounttemp.Element("Logo").Value));
+                }
+            }
+            return foundTeam;
         }
     }
 }

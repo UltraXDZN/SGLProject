@@ -57,6 +57,7 @@ namespace SGLProject.Pages
                 "   <Username></Username>" +
                 "   <PasswordHash></PasswordHash>" +
                 "   <isAdmin></isAdmin>" +
+                "   <Team></Team>" +
                 "</Account>");
             accountData.Save(accountDataStored);
 

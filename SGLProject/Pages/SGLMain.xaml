@@ -82,6 +82,13 @@
                             Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"
                             Click="Natjecanja_Click"/>
                             <attachedProperties:CheckableMenuButtons
+                                x:Name="Teams"
+                            Content="Timovi"
+                            Icon="{StaticResource TeamsIcon}"
+                            Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"
+                            Click="Teams_Click"/>
+                            
+                            <attachedProperties:CheckableMenuButtons
                             Content="Povijest"
                             Icon="{StaticResource HistoryIcon}"
                             Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"
@@ -93,6 +100,7 @@
                             Icon="{StaticResource CommunityIcon}"
                             Style="{StaticResource SideNavigationCheckableMenuButtonsStyle}"
                             Click="Administration_Click"/>
+                            
                         </StackPanel>
                     </attachedProperties:SideNavigationMenu.CheckableMenuButtonsContainer>
 

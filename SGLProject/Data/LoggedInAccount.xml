@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Account>
-  <Username>Juraj</Username>
-  <PasswordHash>ICy5YqxZB1uWSwcVLSNLcA==</PasswordHash>
-  <isAdmin>True</isAdmin>
+  <Username>
+  </Username>
+  <PasswordHash>
+  </PasswordHash>
+  <isAdmin>
+  </isAdmin>
 </Account>

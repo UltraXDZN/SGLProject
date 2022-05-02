@@ -61,6 +61,7 @@ namespace SGLProject.Pages
                     $"   <Username>{username}</Username>" +
                     $"   <PasswordHash>{password}</PasswordHash>" +
                     "    <isAdmin>False</isAdmin>" +
+                    "    <Team></Team>" +
                     "</Account>");
                 XmlNode n = db.ImportNode(xd2.FirstChild, true);
                 db.ChildNodes[1].AppendChild(n);
